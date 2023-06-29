@@ -12,7 +12,7 @@ export default function HeroSection(){
             terbaik dengan harga terjangkau. Selalu siap melayani 
             kebutuhanmu untuk sewa mobil selama 24 jam.
           </p>
-          <Button color="success">
+          <Button className="hero-button" color="success">
             Mulai Sewa Mobil
           </Button>
         </Col>

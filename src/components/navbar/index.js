@@ -20,20 +20,20 @@ function NavbarComponent(props) {
   return (
     <div>
       <Navbar color="light" light className='navbar-container' expand="md">
-        <NavbarBrand href="/">Rental Car</NavbarBrand>
+        <NavbarBrand className ="navbar-brand" href="/">Rental Car</NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} />
         <Collapse navbar className='navbar-section'> 
           <Nav className="ml-auto" navbar>
-            <NavItem>
+            <NavItem className="nav-item">
               <NavLink href="/our-seriveces/">Our Services</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="nav-item">
               <NavLink href="/why-us/">Why Us</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="nav-item">
               <NavLink href="/testimonial/">Testimonial</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="nav-item">
               <NavLink href="FAQ">FAQ</NavLink>
             </NavItem>
           </Nav>
