@@ -1,13 +1,11 @@
 import Layout from "../../components/layout";
-import HeroSection from "./sections/HeroSection";
+import HeroSection from "../cart/sections/HeroSection";
 import ServiceSection from "./sections/ServiceSection";
-import WhySection from "./sections/WhySection";
-export default function Hero(){
+export default function Cart(){
   return (
     <Layout>
       <HeroSection />
       <ServiceSection/>
-      <whySection/>
     </Layout>
   )
 }

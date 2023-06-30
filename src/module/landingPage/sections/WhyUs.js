@@ -1,9 +1,13 @@
-import React from "react";
-import { Component } from "react";
-import {Col, Container, Row } from "reactstrap";
-import { Card, CardBody, CardColumns } from "reactstrap";
-import App from "../../../App";
-export default function WhySection() {
+import React from 'react';
+import { Component } from 'react';
+import {Col, Container, Row } from 'reactstrap';
+import { Card, CardBody, CardColumns } from 'reactstrap';
+import App from '../../../App';
+import iconComplete from '../../../assets/img/icon_complete.png';
+import iconPrice from '../../../assets/img/icon_price.png';
+import iconDay from '../../../assets/img/icon_24hrs.png';
+import iconProfessional from '../../../assets/img/icon_professional.png';
+export default function WhyUs() {
     return (
     <div className="whyus" id="whyus">
         <Container fluid className="whyus" id="whyus">
@@ -12,42 +16,42 @@ export default function WhySection() {
             <h4 className="why-content">Mengapa harus pilih Binar Car Rental? </h4>
           </Row>
           <Row>
-            <col md={3}>
+            <Col md={3}>
               <Card>
                 <CardBody>
-                  <img src={require("../../../assets/img/icon_complete.png")} />
+                  <img src={iconComplete} alt='icon-like' />
                   <h4 className="title-card">Mobil Lengkap</h4>
                   <p className="text-card">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
                 </CardBody>
                </Card>
-            </col>
-            <col md={3}>
+            </Col>
+            <Col md={3}>
               <Card>
                 <CardBody>
-                  <img src={require("../../../assets/img/icon_price.png")} />
+                  <img src={iconPrice} alt='icon-price' />
                   <h4 className="title-card">Harga Murah</h4>
                   <p className="text-card">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
                 </CardBody>
               </Card>
-            </col>
-            <col md={3}>
+            </Col>
+            <Col md={3}>
               <Card>
                 <CardBody>
-                  <img src={require("../../../assets/img/icon_24hrs.png")} />
+                  <img src={iconDay} alt='icon-time'/>
                   <h4 className="title-card">Layanan 24 Jam</h4>
                   <p className="text-card">Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
                 </CardBody>
               </Card>
-            </col>
-            <col md={3}>
+            </Col>
+            <Col md={3}>
               <Card>
                 <CardBody>
-                  <img src={require("../../../assets/img/icon_professional.png")}/>
+                  <img src={iconProfessional} alt='icon-professional'/>
                   <h4 className="title-card">Sopir Professional</h4>
                   <p className="text-card">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
                 </CardBody>
               </Card>
-            </col>
+            </Col>
           </Row>
         </Container>
     </div>

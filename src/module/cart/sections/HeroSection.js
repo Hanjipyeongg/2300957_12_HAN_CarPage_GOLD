@@ -8,8 +8,8 @@ export default function HeroSection(){
     <Container fluid>
       <Row className='hero-container'>
         <Col sm={12} md={6} className='hero-content-section'>
-          <h1 class="hero-section-text-title">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
-          <p class="hero-section-text-description">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas 
+          <h1 className="hero-section-text-title">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+          <p className="hero-section-text-description">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas 
             terbaik dengan harga terjangkau. Selalu siap melayani 
             kebutuhanmu untuk sewa mobil selama 24 jam.
           </p>

@@ -1,8 +1,8 @@
-import React from "react";
-import { Col, Container, Row } from "reactstrap";
-import checklist from "../../../assets/img/Group 53.png";
-import womanImage from "../../../assets/img/img_service.png";
-import App from "../../../App";
+import React from 'react';
+import { Col, Container, Row } from 'reactstrap';
+import checklist from '../../../assets/img/Group 53.png';
+import womanImage from '../../../assets/img/img_service.png';
+import App from '../../../App';
 export default function ServiceSection(){
 return (
     <Container fluid>
