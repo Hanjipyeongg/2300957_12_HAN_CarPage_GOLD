@@ -19,7 +19,7 @@ function NavbarComponent(props) {
 
   return (
     <div>
-      <Navbar color="light" light className='navbar-container' expand="md">
+      <Navbar color="light" light className='navbar-container'  expand="md">
         <NavbarBrand className ="navbar-brand" href="/">Rental Car</NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} />
         <Collapse navbar className='navbar-section'> 
@@ -34,7 +34,7 @@ function NavbarComponent(props) {
               <NavLink href="/testimonial/">Testimonial</NavLink>
             </NavItem>
             <NavItem className="nav-item">
-              <NavLink href="FAQ">FAQ</NavLink>
+              <NavLink href="/FAQ/">FAQ</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

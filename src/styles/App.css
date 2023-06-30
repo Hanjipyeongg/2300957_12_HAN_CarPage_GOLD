@@ -1,3 +1,8 @@
+#container {
+  min-height: 250px;
+  margin-top: 100px;
+  scroll-margin-top: 80px;
+}
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -96,4 +101,35 @@ float: left;
   padding-top: 20px;
 
 }
+/*  END service */
 
+/* why us */
+.why-title {
+  font-family: arial;
+  font-weight:700 ;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 16px;
+}
+.why-content {
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 40px;
+  }
+.title-card {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.text-card {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+/* end why us */

@@ -1,10 +1,11 @@
 import React from "react";
-import { Col, Container, Row } from "reactstrap/types";
-import checklist from "../../../assets/img/Group 53.png"
-import womanImage from "../../../assets/img/img_service.png"
+import { Col, Container, Row } from "reactstrap";
+import checklist from "../../../assets/img/Group 53.png";
+import womanImage from "../../../assets/img/img_service.png";
+import App from "../../../App";
 export default function ServiceSection(){
 return (
-    <Container>
+    <Container fluid>
         <Row>
           <Col md={6}>
             <img src={womanImage} alt="woman_img"/>
@@ -38,4 +39,4 @@ return (
         </Row>
       </Container>
 )
-}
+};
