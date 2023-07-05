@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Col, Container, Row } from "reactstrap";
 import CarImage from '../../../assets/img/img_car.png';
-import App from '../../../App';
 
 export default function HeroSection(){
   return (
@@ -18,7 +17,7 @@ export default function HeroSection(){
           </Button>
         </Col>
         <Col sm={12} md={6} className='hero-image-section'>
-          <img src={CarImage} width={'100%'} class="image-car" alt="image_car" />
+          <img src={CarImage} width={'100%'} className="image-car" alt="image_car" />
         </Col>
       </Row>
     </Container>

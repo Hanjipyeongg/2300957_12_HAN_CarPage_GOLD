@@ -1,8 +1,6 @@
 import React from 'react';
-import { Component } from 'react';
 import {Col, Container, Row } from 'reactstrap';
-import { Card, CardBody, CardColumns } from 'reactstrap';
-import App from '../../../App';
+import { Card, CardBody } from 'reactstrap';
 import iconComplete from '../../../assets/img/icon_complete.png';
 import iconPrice from '../../../assets/img/icon_price.png';
 import iconDay from '../../../assets/img/icon_24hrs.png';

@@ -1,3 +1,14 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #container {
   min-height: 250px;
   margin-top: 100px;
@@ -133,3 +144,209 @@ float: left;
   line-height: 20px;
 }
 /* end why us */
+
+/* Testimonial */
+.title-testi {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+.text-testi {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  
+}
+#card-content {
+  display: flex;
+  justify-content: center;
+  width: 30%; 
+  height: 100%;
+
+}
+.img-fluid {
+ display: flex;
+ justify-content: center;
+ width: 80px;
+ height: 80px;
+ padding-top: 55px;
+ margin-left: 25px;
+}
+@media (max-width: 576px) {
+  .img-fluid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 42%;
+  }
+  .card-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+}
+.card-text1 {
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.scroll-content {
+    display: inline-block;
+}
+
+.swipe {
+  border-radius: 20px;
+  border: none;
+  width: 25px;
+
+  margin-right: 25px;
+  margin-top: 8px;
+}
+.button-active  {
+  text-align: center;
+
+}
+.swiper-navBtn {
+  border: none;
+  border-radius: 15px;
+}
+.swiper-navBtn:hover {
+  background-color:#5CB85F;
+}
+/* end testimonial */
+
+/* lokasi */
+
+.col-md-10 {
+  background-color: #0D28A6;
+  /* width: 1168px; */
+  height: 340px;
+}
+.header-lokasi {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  margin-bottom: 16px;
+  margin-top: 64px;
+}
+.text-lokasi {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 60px;
+}
+.button-lokasi {
+  font-family:Arial, Helvetica, sans-serif ;
+  background-color: #5CB85F;
+  color: #FFFFFF;
+  padding: 8px 12px;
+  border: none;
+  padding: 8px 12px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* end lokasi */
+
+/* FAQ */
+.title-question {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+.text-question {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+.accordion-header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* end */
+
+/* Footer */
+.footer-section {
+  margin-top: 40px;
+}
+.title-alamat {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+.link-href {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom :16px;
+    display: block;
+    text-decoration: none;
+}
+.link-href:link {
+  color: black;
+}
+.text-sosmed {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+.logo-sosmed {
+  margin-right: 8px;
+}
+.text-copyright {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.text-copyright {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.footer-section {
+  height: 350px;
+  margin-top:  50px; ;
+}
+.button-copyright {
+  background-color:#0D28A6;
+  width: 100px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.tag-binar {
+  color: white;
+  text-decoration: none;
+}
+/* End */

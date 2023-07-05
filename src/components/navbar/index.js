@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Collapse,
   Navbar,
@@ -10,7 +10,7 @@ import {
   Offcanvas,
   OffcanvasHeader,
   OffcanvasBody,
-} from 'reactstrap';
+} from "reactstrap";
 
 function NavbarComponent(props) {
   const [collapsed, setCollapsed] = useState(false);
@@ -19,10 +19,12 @@ function NavbarComponent(props) {
 
   return (
     <div>
-      <Navbar color="light" light className='navbar-container'  expand="md">
-        <NavbarBrand className ="navbar-brand" href="/">Rental Car</NavbarBrand>
+      <Navbar color="light" light className="navbar-container" expand="md">
+        <NavbarBrand className="navbar-brand" href="/">
+          Rental Car
+        </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} />
-        <Collapse navbar className='navbar-section'> 
+        <Collapse navbar className="navbar-section">
           <Nav className="ml-auto" navbar>
             <NavItem className="nav-item">
               <NavLink href="/our-seriveces/">Our Services</NavLink>
@@ -34,14 +36,15 @@ function NavbarComponent(props) {
               <NavLink href="/testimonial/">Testimonial</NavLink>
             </NavItem>
             <NavItem className="nav-item">
+              <NavLink href="cart">Cart</NavLink>
+            </NavItem>
+            <NavItem className="nav-item">
               <NavLink href="/FAQ/">FAQ</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
-        <Offcanvas toggle={toggleNavbar} isOpen={collapsed} direction='end'>
-          <OffcanvasHeader toggle={toggleNavbar}>
-            Rental Car
-          </OffcanvasHeader>
+        <Offcanvas toggle={toggleNavbar} isOpen={collapsed} direction="end">
+          <OffcanvasHeader toggle={toggleNavbar}>Rental Car</OffcanvasHeader>
           <OffcanvasBody>
             <Nav className="ml-auto navbar-section" navbar>
               <NavItem>
@@ -52,6 +55,9 @@ function NavbarComponent(props) {
               </NavItem>
               <NavItem>
                 <NavLink href="/testimonial/">Testimonial</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="cart">Cart</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="FAQ">FAQ</NavLink>
