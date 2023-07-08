@@ -19,7 +19,7 @@ function NavbarComponent(props) {
 
   return (
     <div>
-      <Navbar color="light" light className="navbar-container" expand="md">
+      <Navbar color="light" light className="navbar-container" expand="md" fixed="top" id="navbar-wrap">
         <NavbarBrand className="navbar-brand" href="/">
           Rental Car
         </NavbarBrand>
@@ -48,13 +48,13 @@ function NavbarComponent(props) {
           <OffcanvasBody>
             <Nav className="ml-auto navbar-section" navbar>
               <NavItem>
-                <NavLink href="/our-seriveces/">Our Services</NavLink>
+                <NavLink href="service">Our Services</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/why-us/">Why Us</NavLink>
+                <NavLink href="whyus">Why Us</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/testimonial/">Testimonial</NavLink>
+                <NavLink href="testimonial">Testimonial</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="cart">Cart</NavLink>

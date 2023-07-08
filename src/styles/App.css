@@ -7,13 +7,37 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-}
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  }
 
-#container {
-  min-height: 250px;
-  margin-top: 100px;
-  scroll-margin-top: 80px;
+
+.navbar-container{
+  background-color: #F1F3FF !important;
 }
+ .nav-link {
+  position: relative;
+ }
+
+ .nav-link::after{
+  transition: all 0.2s;
+ }
+ .nav-link:hover::after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: #5CB85F;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+ }
+ .nav-link:hover::after {
+  opacity: 1;
+ }
+
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -35,9 +59,19 @@ padding-right: 5px;
 float: left;
 }
 
+/* hero section */
+.hero-section {
+  height: 600px;
+  margin-top: 100px;
+  scroll-margin-top: 80px;
+  margin-bottom: 20px;
+
+}
 .hero-container{
-  padding-top:20px;
+  
+  padding-top:125px;
   background-color: #F1F3FF;
+  padding-left: 10px;
 }
 
 .hero-content-section{
@@ -83,6 +117,14 @@ float: left;
   }
 }
 /* service */
+.service-section{
+  margin-top: 100px;
+  margin-bottom: 100px;
+} 
+.service-row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .title-service {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -115,6 +157,14 @@ float: left;
 /*  END service */
 
 /* why us */
+.whyus{
+  margin-bottom: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.why-container {
+  padding-left: 20px;
+}
 .why-title {
   font-family: arial;
   font-weight:700 ;
@@ -146,6 +196,9 @@ float: left;
 /* end why us */
 
 /* Testimonial */
+.testimonial {
+  margin-bottom: 50px;
+}
 .title-testi {
   font-size: 24px;
   font-weight: 700;
@@ -169,7 +222,7 @@ float: left;
   justify-content: center;
   width: 30%; 
   height: 100%;
-
+  background-color: #F1F3FF;
 }
 .img-fluid {
  display: flex;
@@ -179,7 +232,11 @@ float: left;
  padding-top: 55px;
  margin-left: 25px;
 }
-@media (max-width: 576px) {
+@media only screen and (max-width: 600px) {
+  .swiper-wrapper {
+    display: block;
+    width: 800px;
+  }
   .img-fluid {
       display: flex;
       justify-content: center;
@@ -215,6 +272,7 @@ float: left;
   margin-top: 8px;
 }
 .button-active  {
+  margin-top: 10px;
   text-align: center;
 
 }
@@ -269,6 +327,10 @@ float: left;
 /* end lokasi */
 
 /* FAQ */
+.section-question {
+  margin-top: 200px;
+  margin-bottom: 150px;
+}
 .title-question {
   font-weight: 700;
   font-size: 24px;
@@ -290,7 +352,7 @@ float: left;
 
 /* Footer */
 .footer-section {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .title-alamat {
   font-weight: 700;
@@ -303,8 +365,12 @@ float: left;
   font-size: 14px;
   line-height: 20px;
   margin-bottom :16px;
-    display: block;
-    text-decoration: none;
+  display: block;
+  text-decoration: none;
+  padding-top: 12px;
+}
+.space-between {
+  margin-top: 5px;
 }
 .link-href:link {
   color: black;
@@ -349,4 +415,63 @@ float: left;
   color: white;
   text-decoration: none;
 }
+.link-href {
+  display: block;
+  box-shadow: inset 0 0 0 0 #5CB85F;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  margin-bottom: 10px;
+}
+.link-href:hover{
+  box-shadow: inset 100px 0 0 0 #5CB85F;
+  color: white;
+}
+
 /* End */
+
+/* cart page */
+.search-card-section {
+  margin-top: 20px;
+}
+
+.card-detail-option {
+  background-color:#FFFFFF ;
+}
+.button-style {
+  padding-top: 32px;
+}
+
+.head-list {
+  margin-left: 14px;
+}
+.cart-title {
+  margin-left: 8px;
+}
+.cart-header {
+  padding-left: 15px;
+}
+.cart-category {
+  color:#8A8A8A;
+  margin-top: -2px;
+}
+.cart-img {
+  width: 270px;
+  height: 200px;
+  margin-top: 30px;
+}
+.cart-name {
+ margin-top: 8px;
+}
+.cart-price {
+  margin-top: 88px;
+
+  
+}
+
+.list-cart {
+  color:#8A8A8A;
+  padding-left: 15px;
+}
+
+/* end */

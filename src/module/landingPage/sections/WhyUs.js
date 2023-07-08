@@ -8,8 +8,8 @@ import iconProfessional from '../../../assets/img/icon_professional.png';
 export default function WhyUs() {
     return (
     <div className="whyus" id="whyus">
-        <Container fluid className="whyus" id="whyus">
-          <Row>
+        <Container fluid className="why-container" id="whyus">
+          <Row >
             <h3 className="why-title">Why Us ?</h3>
             <h4 className="why-content">Mengapa harus pilih Binar Car Rental? </h4>
           </Row>

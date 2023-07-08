@@ -4,7 +4,7 @@ import CarImage from '../../../assets/img/img_car.png';
 
 export default function HeroSection(){
   return (
-    <Container fluid>
+    <Container fluid className='hero-section'>
       <Row className='hero-container'>
         <Col sm={12} md={6} className='hero-content-section'>
           <h1 className="hero-section-text-title">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>

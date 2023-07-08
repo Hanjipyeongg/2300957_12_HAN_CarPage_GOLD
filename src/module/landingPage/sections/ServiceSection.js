@@ -4,8 +4,8 @@ import checklist from '../../../assets/img/Group 53.png';
 import womanImage from '../../../assets/img/img_service.png';
 export default function ServiceSection(){
 return (
-    <Container fluid>
-        <Row>
+    <Container fluid className='service-section'>
+        <Row className='service-row'>
           <Col md={6}>
             <img src={womanImage} alt="woman_img"/>
           </Col>
