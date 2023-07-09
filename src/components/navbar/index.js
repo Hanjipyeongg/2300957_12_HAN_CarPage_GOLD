@@ -19,7 +19,7 @@ function NavbarComponent(props) {
 
   return (
     <div>
-      <Navbar color="light" light className="navbar-container" expand="md" fixed="top" id="navbar-wrap">
+      <Navbar className="navbar-container" expand="md" fixed="top" id="navbar-wrap">
         <NavbarBrand className="navbar-brand" href="/">
           Rental Car
         </NavbarBrand>
@@ -27,7 +27,7 @@ function NavbarComponent(props) {
         <Collapse navbar className="navbar-section">
           <Nav className="ml-auto" navbar>
             <NavItem className="nav-item">
-              <NavLink href="/our-seriveces/">Our Services</NavLink>
+              <NavLink href="/">Our Services</NavLink>
             </NavItem>
             <NavItem className="nav-item">
               <NavLink href="/why-us/">Why Us</NavLink>

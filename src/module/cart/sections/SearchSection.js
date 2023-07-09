@@ -1,6 +1,7 @@
 import { Fragment, useState } from "react";
 import { Container, Input, Label, FormGroup, Button, Col, Row, Card, CardBody, CardTitle, CardText } from "reactstrap";
 import { API } from "../../../common/API";
+import { GoPeople, iconName } from "react-icons/go"
 
 export default function SearchSection(){
   const [nameCar, setNameCar]= useState('')
@@ -47,6 +48,30 @@ export default function SearchSection(){
         return ''
     }
   }
+
+
+  const mappingSeat = (category) => {
+    switch(category) {
+      
+      case '2-4 orang' :
+          return '2-4 orang'
+      case '4-6 orang' :
+        return '4-6 orang'
+      case '6-8 orang' :
+        return '6-8 orang'
+      case 'small' :
+        return '2-4 orang'
+      case 'medium' :
+        return '4-6 orang'
+      case 'large' :
+        return '6-8 orang'
+      case  'big' :
+        return '6-8 orang'
+      default:
+        return ''
+    }
+  }
+
 
   const formatToIDR = (idr) => {
     const parsed = idr.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
@@ -214,6 +239,7 @@ export default function SearchSection(){
                       <img
                         alt={car.name}
                         src={car.image}
+                        className="car-size"
                       />
                       <CardBody>
                         <CardTitle tag="h5">
@@ -277,14 +303,20 @@ export default function SearchSection(){
                 </ul>
             </Col> 
 
-            <Col md={4} className="border-data">
+            <Col md={4}>
                     <img className="cart-img"
                       alt={dataDetail.name}
                       src={dataDetail.image}
                     />
                     <p className="cart-name"><strong>{dataDetail.name}</strong></p>
-                    <p className="cart-category"> {dataDetail.category}</p>
-                    <p className="cart-price"> <strong>Total {formatToIDR(dataDetail.price)} </strong></p>
+                    <div className="category-map">
+                     <p className="icon-car"><GoPeople /></p>
+                     <p className="seat-car">{mappingSeat(dataDetail.category)}</p> 
+                    </div>
+                    <div className="cart-price">
+                    <p><strong>Total</strong></p>
+                    <p><strong>{formatToIDR(dataDetail.price)}</strong></p>
+                    </div>
             </Col>
         </Row>
         </section>

@@ -15,9 +15,6 @@ body {
   }
 
 
-.navbar-container{
-  background-color: #F1F3FF !important;
-}
  .nav-link {
   position: relative;
  }
@@ -89,10 +86,18 @@ float: left;
 .hero-image-section{
   padding: 0 !important;
 }
+.hero-section-text-description {
+  padding-right : 18px;
+  padding-left : 8px
+}
+.hero-section-text-title {
+  padding-right: 18px;
+  padding-left : 8px
+}
 .hero-button {
   padding: 8px 12px;
   margin-left:15px;
-
+  margin-top: 8px;
   
 }
 
@@ -131,6 +136,7 @@ float: left;
   font-size: 24px;
   line-height: 36px;
   margin-bottom: 24px;
+  padding-right: 20px;
 }
 .text-service {
   font-family: Arial, Helvetica, sans-serif;
@@ -154,6 +160,24 @@ float: left;
   padding-top: 20px;
 
 }
+@media screen and (max-width:510px) {
+  .img-woman {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+  }
+  
+}
+
+
+@media screen and (max-width:950px){
+  .img-woman {
+    max-width: 100%;
+    height: auto;
+   margin-bottom: 24px;
+  }
+
+}
 /*  END service */
 
 /* why us */
@@ -161,6 +185,14 @@ float: left;
   margin-bottom: 100px;
   padding-left: 10px;
   padding-right: 10px;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+.card-content {
+  height: 214px;
+  overflow:hidden
 }
 .why-container {
   padding-left: 20px;
@@ -171,6 +203,7 @@ float: left;
   font-size: 24px;
   line-height: 36px;
   margin-bottom: 16px;
+  margin-left: 10px;
 }
 .why-content {
   font-family:Arial, Helvetica, sans-serif;
@@ -178,6 +211,7 @@ float: left;
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 40px;
+  margin-left: 10px;
   }
 .title-card {
   font-family: Arial, Helvetica, sans-serif;
@@ -186,6 +220,11 @@ float: left;
   line-height: 24px;
   margin-top: 10px;
   margin-bottom: 10px;
+  
+}
+.row-card {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .text-card {
   font-family: Arial, Helvetica, sans-serif;
@@ -215,11 +254,28 @@ float: left;
   line-height: 20px;
   letter-spacing: 0em;
   text-align: center;
+  padding-bottom: 12px;
+  
+}
+
+.scroll-content{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  overflow-x: scroll;
+}
+.slide-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding:0 28%;
   
 }
 #card-content {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 30%; 
   height: 100%;
   background-color: #F1F3FF;
@@ -230,12 +286,17 @@ float: left;
  width: 80px;
  height: 80px;
  padding-top: 55px;
- margin-left: 25px;
+ margin-left: 30%;
 }
-@media only screen and (max-width: 600px) {
-  .swiper-wrapper {
+
+@media only screen and (max-width: 568px) {
+  #card-content {
     display: block;
-    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-wrapper {
+    display: flex;
   }
   .img-fluid {
       display: flex;
@@ -247,7 +308,43 @@ float: left;
       display: flex;
       justify-content: center;
       align-items: center;
+      font-size: 12px;
       
+  }
+}
+
+@media screen and (max-width:780px) {
+  .slide-content {
+    padding-left:0%;
+    width: 50%;
+  }
+  #card-content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-wrapper {
+    display: flex;
+  }
+  .img-fluid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 42%;
+
+  }
+  .card-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  @media screen and (max-width:1050px) {
+    .card-content {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 10em;
+    }
   }
 }
 .card-text1 {
@@ -259,8 +356,10 @@ float: left;
   text-align: left;
 }
 
+
 .scroll-content {
     display: inline-block;
+    
 }
 
 .swipe {
@@ -434,7 +533,10 @@ float: left;
 .search-card-section {
   margin-top: 20px;
 }
-
+.car-size {
+  width: 350px;
+  height: 200px;
+}
 .card-detail-option {
   background-color:#FFFFFF ;
 }
@@ -453,17 +555,31 @@ float: left;
 }
 .cart-category {
   color:#8A8A8A;
-  margin-top: -2px;
+  margin-top: -10px;
 }
 .cart-img {
   width: 270px;
   height: 200px;
   margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 5px;
 }
 .cart-name {
- margin-top: 8px;
+ margin-top: 16px;
+}
+.category-map {
+  display: flex;
+}
+/* .icon-car {
+  margin-bottom: 6px;
+} */
+.seat-car {
+  padding-left: 8px;
+  padding-top: 1px;
 }
 .cart-price {
+  display: flex;
+  justify-content: space-between;
   margin-top: 88px;
 
   

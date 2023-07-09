@@ -22,8 +22,9 @@ export default function Testimoni() {
       </Container>
       
         <Swiper
-          spaceBetween={20}
-          slidesPerView={3}
+          slidesPerView={1}
+          loop={true}
+          centeredSlides={true}
           onSwiper={(swiper) => {
           swiperRef.current = swiper;
         }}
@@ -33,13 +34,13 @@ export default function Testimoni() {
             className="scroll-content d-md-inline-flex swiper-wrapper"
             id="cardWrapper" 
           >
-            <SwiperSlide>
+            <SwiperSlide className="slide-content">
               <Card
                 className="mb-3 swiper-slide"
                 id="card-content"
-                style={{ width: "100%" }}
+                style={{ width: "540px" }} sm={12}
               >
-                <Row g={0}>
+                <Row g={0} className="row-position">
                   <Col md={4}>
                     <img
                       src={testi2}
@@ -66,11 +67,11 @@ export default function Testimoni() {
                 </Row>
               </Card>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="slide-content">
               <Card
                 className="mb-3 swiper-slide"
                 id="card-content"
-                style={{ width: "100%" }}
+                style={{ width: "540px" }} 
               >
                 <Row g={0}>
                   <Col md={4}>
@@ -99,11 +100,11 @@ export default function Testimoni() {
                 </Row>
               </Card>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="slide-content">
               <Card
                 className="mb-3 swiper-slide"
                 id="card-content"
-                style={{ width: "100%" }}
+                style={{ width: "540px" }} sm={12}
               >
                 <Row g={0}>
                   <Col md={4}>
@@ -132,11 +133,11 @@ export default function Testimoni() {
                 </Row>
               </Card>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="slide-content"> 
               <Card
                 className="mb-3 swiper-slide"
                 id="card-content"
-                style={{ width: "100%" }}
+                style={{ width: "540px" }} 
               >
                 <Row g={0}>
                   <Col md={4}>

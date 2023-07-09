@@ -6,10 +6,10 @@ export default function ServiceSection(){
 return (
     <Container fluid className='service-section'>
         <Row className='service-row'>
-          <Col md={6}>
-            <img src={womanImage} alt="woman_img"/>
+          <Col md={6} >
+            <img src={womanImage} alt="woman_img" className='img-woman'/>
           </Col>
-          <Col md={6}>
+          <Col md={6} className="service-coloumn">
             <h3 className="title-service"> Best Car Rental for any kind of trip in Semarang!</h3>
             <p className="text-service">Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
             <ul className="p-0">
