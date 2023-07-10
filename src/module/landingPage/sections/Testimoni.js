@@ -38,7 +38,7 @@ export default function Testimoni() {
               <Card
                 className="mb-3 swiper-slide"
                 id="card-content"
-                style={{ width: "540px" }} sm={12}
+                style={{ width: "540px", margin:"auto" }} sm={12}
               >
                 <Row g={0} className="row-position">
                   <Col md={4}>
@@ -71,7 +71,7 @@ export default function Testimoni() {
               <Card
                 className="mb-3 swiper-slide"
                 id="card-content"
-                style={{ width: "540px" }} 
+                style={{ width: "540px", margin:"auto"  }} 
               >
                 <Row g={0}>
                   <Col md={4}>
@@ -104,7 +104,7 @@ export default function Testimoni() {
               <Card
                 className="mb-3 swiper-slide"
                 id="card-content"
-                style={{ width: "540px" }} sm={12}
+                style={{ width: "540px", margin:"auto" }} sm={12}
               >
                 <Row g={0}>
                   <Col md={4}>
@@ -137,7 +137,7 @@ export default function Testimoni() {
               <Card
                 className="mb-3 swiper-slide"
                 id="card-content"
-                style={{ width: "540px" }} 
+                style={{ width: "540px",margin:"auto" }} 
               >
                 <Row g={0}>
                   <Col md={4}>

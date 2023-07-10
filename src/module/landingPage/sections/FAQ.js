@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Accordion, Col, Container, Row } from "reactstrap";
 import { AccordionBody, AccordionHeader, AccordionItem } from "reactstrap";
 function FAQ() {
-  const [open, setOpen] = useState("1");
+  const [open, setOpen] = useState('1');
   const toggle = (id) => {
     if (open === id) {
       setOpen();
@@ -27,7 +27,7 @@ function FAQ() {
           </Col>
           <Col md={6}>
             <Accordion open={open} toggle={toggle}>
-              <AccordionItem>
+              <AccordionItem className="accordion-items">
                 <AccordionHeader targetId="1">
                   <strong>Apa saja syarat yang dibutuhkan?</strong>
                 </AccordionHeader>
@@ -36,7 +36,7 @@ function FAQ() {
                   <p>-SIM A</p>
                 </AccordionBody>
               </AccordionItem>
-              <AccordionItem>
+              <AccordionItem className="accordion-items">
                 <AccordionHeader targetId="2">
                   <strong> Berapa hari minimal sewa mobil lepas kunci?</strong>
                 </AccordionHeader>
@@ -44,19 +44,18 @@ function FAQ() {
                   Maksimal untuk sewa mobil lepas kunci adalah 7 Hari
                 </AccordionBody>
               </AccordionItem>
-              <AccordionItem>
+              <AccordionItem className="accordion-items">
                 <AccordionHeader targetId="3">
                   <strong>
                     Berapa hari sebelumnya sabaiknya booking sewa mobil?
-                  </strong>{" "}
-                  '
+                  </strong>
                 </AccordionHeader>
                 <AccordionBody accordionId="3">
                   Waktu ideal untuk booking sewa mobil adalah 7 hari sebelum
                   penyewaan
                 </AccordionBody>
               </AccordionItem>
-              <AccordionItem>
+              <AccordionItem className="accordion-items">
                 <AccordionHeader targetId="4">
                   <strong>Apakah Ada biaya antar-jemput? </strong>
                 </AccordionHeader>
@@ -65,7 +64,7 @@ function FAQ() {
                   antar lokasi berjarak lebih dari 3km
                 </AccordionBody>
               </AccordionItem>
-              <AccordionItem>
+              <AccordionItem className="accordion-items">
                 <AccordionHeader targetId="5">
                   <strong>Bagaimana jika terjadi kecelakaan? </strong>
                 </AccordionHeader>

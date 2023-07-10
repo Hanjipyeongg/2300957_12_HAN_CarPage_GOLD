@@ -68,7 +68,7 @@ float: left;
   
   padding-top:125px;
   background-color: #F1F3FF;
-  padding-left: 10px;
+  padding-left: 48px;
 }
 
 .hero-content-section{
@@ -128,7 +128,7 @@ float: left;
 } 
 .service-row {
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 28px;
 }
 .title-service {
   font-family: Arial, Helvetica, sans-serif;
@@ -149,7 +149,9 @@ float: left;
 .p-0 {
   margin-bottom: 20px;
 }
-
+.img-woman {
+  padding-left:8px
+}
 
 .benefit {
   font-weight: 700;
@@ -183,8 +185,8 @@ float: left;
 /* why us */
 .whyus{
   margin-bottom: 100px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .card-container {
   display: flex;
@@ -203,7 +205,7 @@ float: left;
   font-size: 24px;
   line-height: 36px;
   margin-bottom: 16px;
-  margin-left: 10px;
+  margin-left: 18px;
 }
 .why-content {
   font-family:Arial, Helvetica, sans-serif;
@@ -211,7 +213,7 @@ float: left;
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 40px;
-  margin-left: 10px;
+  margin-left: 18px;
   }
 .title-card {
   font-family: Arial, Helvetica, sans-serif;
@@ -223,8 +225,8 @@ float: left;
   
 }
 .row-card {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding : 0 12px;
+
 }
 .text-card {
   font-family: Arial, Helvetica, sans-serif;
@@ -268,8 +270,6 @@ float: left;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  padding:0 28%;
   
 }
 #card-content {
@@ -292,8 +292,7 @@ float: left;
 @media only screen and (max-width: 568px) {
   #card-content {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: fit-content;
   }
   .swiper-wrapper {
     display: flex;
@@ -337,14 +336,6 @@ float: left;
       display: flex;
       justify-content: center;
       align-items: center;
-  }
-
-  @media screen and (max-width:1050px) {
-    .card-content {
-      margin-right: auto;
-      margin-left: auto;
-      padding-left: 10em;
-    }
   }
 }
 .card-text1 {
@@ -430,15 +421,23 @@ float: left;
   margin-top: 200px;
   margin-bottom: 150px;
 }
+
 .title-question {
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
+  padding-left: 16px;
 }
 .text-question {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  padding-left: 16px;
+}
+.accordion-items {
+  border-style: solid;
+  border-width: medium;
+  margin-bottom: 14px;
 }
 .accordion-header {
   font-family: Arial, Helvetica, sans-serif;
@@ -452,12 +451,14 @@ float: left;
 /* Footer */
 .footer-section {
   margin-top: 20px;
+  margin-bottom: 0;
 }
 .title-alamat {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 16px;
+  padding-left: 18px;
 }
 .link-href {
   font-weight: 400;
@@ -467,10 +468,14 @@ float: left;
   display: block;
   text-decoration: none;
   padding-top: 12px;
+  
+  
 }
 .space-between {
   margin-top: 5px;
+  padding: 0 auto;
 }
+
 .link-href:link {
   color: black;
 }
@@ -481,8 +486,9 @@ float: left;
   margin-bottom: 16px;
 }
 .logo-sosmed {
-  margin-right: 8px;
+  margin-right: 10px;
 }
+
 .text-copyright {
   font-weight: 700;
   font-size: 14px;
@@ -508,6 +514,7 @@ float: left;
   display: flex;
   justify-content: center;
   align-items: center;
+  
   
 }
 .tag-binar {
@@ -545,13 +552,13 @@ float: left;
 }
 
 .head-list {
-  margin-left: 14px;
+  margin-left: 18px;
 }
 .cart-title {
-  margin-left: 8px;
+  margin-left: 18px;
 }
 .cart-header {
-  padding-left: 15px;
+  padding-left: 24px;
 }
 .cart-category {
   color:#8A8A8A;
@@ -570,9 +577,7 @@ float: left;
 .category-map {
   display: flex;
 }
-/* .icon-car {
-  margin-bottom: 6px;
-} */
+
 .seat-car {
   padding-left: 8px;
   padding-top: 1px;
@@ -581,6 +586,8 @@ float: left;
   display: flex;
   justify-content: space-between;
   margin-top: 88px;
+  padding-right: 28px;
+  /* padding-left: 8px; */
 
   
 }

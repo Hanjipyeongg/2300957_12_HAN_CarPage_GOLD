@@ -19,7 +19,7 @@ export default function Footer() {
           </Col>
           <Col md={3} className="space-between">
             <a href="#service" className="link-href">
-              our service
+              Our service
             </a>
             <a href="#whyus" className="link-href">
               Why Us
