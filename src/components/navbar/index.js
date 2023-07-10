@@ -12,7 +12,7 @@ import {
   OffcanvasBody,
 } from "reactstrap";
 
-function NavbarComponent(props) {
+function NavbarComponent() {
   const [collapsed, setCollapsed] = useState(false);
 
   const toggleNavbar = () => setCollapsed(!collapsed);

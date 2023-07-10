@@ -343,7 +343,6 @@ float: left;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: left;
 }
 
@@ -366,6 +365,9 @@ float: left;
   text-align: center;
 
 }
+#scroll-left {
+  margin-right: 16px;
+}
 .swiper-navBtn {
   border: none;
   border-radius: 15px;
@@ -379,7 +381,6 @@ float: left;
 
 .col-md-10 {
   background-color: #0D28A6;
-  /* width: 1168px; */
   height: 340px;
 }
 .header-lokasi {
@@ -455,10 +456,10 @@ float: left;
 }
 .title-alamat {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   margin-bottom: 16px;
-  padding-left: 18px;
+  padding-left: 28px;
 }
 .link-href {
   font-weight: 400;
@@ -537,8 +538,12 @@ float: left;
 /* End */
 
 /* cart page */
+
 .search-card-section {
   margin-top: 20px;
+}
+.form-parent {
+  padding-left: 22px;
 }
 .car-size {
   width: 350px;
@@ -587,9 +592,7 @@ float: left;
   justify-content: space-between;
   margin-top: 88px;
   padding-right: 28px;
-  /* padding-left: 8px; */
 
-  
 }
 
 .list-cart {

@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react";
 import { Container, Input, Label, FormGroup, Button, Col, Row, Card, CardBody, CardTitle, CardText } from "reactstrap";
 import { API } from "../../../common/API";
-import { GoPeople, iconName } from "react-icons/go"
+import { GoPeople } from "react-icons/go"
 
 export default function SearchSection(){
   const [nameCar, setNameCar]= useState('')
@@ -39,7 +39,7 @@ export default function SearchSection(){
   const mappingPrice = (price) => {
     switch(price){
       case 'low':
-        return '2-4orang'
+        return '2-4 orang'
       case 'medium':
         return '4-6 orang'
       case 'high':
@@ -54,19 +54,19 @@ export default function SearchSection(){
     switch(category) {
       
       case '2-4 orang' :
-          return '2-4 orang'
+          return '2 - 4 orang'
       case '4-6 orang' :
-        return '4-6 orang'
+        return '4 - 6 orang'
       case '6-8 orang' :
-        return '6-8 orang'
+        return '6 - 8 orang'
       case 'small' :
-        return '2-4 orang'
+        return '2 - 4 orang'
       case 'medium' :
-        return '4-6 orang'
+        return '4 - 6 orang'
       case 'large' :
-        return '6-8 orang'
+        return '6 - 8 orang'
       case  'big' :
-        return '6-8 orang'
+        return '6 - 8 orang'
       default:
         return ''
     }
@@ -91,7 +91,7 @@ export default function SearchSection(){
       <section className="search-card">
         <Row className="search-card-form">
           <Col md={10} className="card-detail-option">
-            <Row>
+            <Row className="form-parent">
               <Col md={3}>
                 <FormGroup>
                   <Label 
@@ -166,7 +166,7 @@ export default function SearchSection(){
                   </Input>
                 </FormGroup>
               </Col>
-              <Col md={3}>
+              <Col md={3} className="card-spacing">
                 <FormGroup>
                   <Label 
                     for="status" 

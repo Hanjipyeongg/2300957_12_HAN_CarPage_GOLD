@@ -10,14 +10,14 @@ export default function Footer() {
     <div className="footer-section" id="footer-id">
       <Container fluid>
         <Row>
-          <Col md={3}>
+          <Col md={4}>
             <p className="title-alamat">
               Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000
             </p>
             <p className="title-alamat">binarcarrental@gmail.com</p>
             <p className="title-alamat">081-233-334-808</p>
           </Col>
-          <Col md={3} className="space-between">
+          <Col md={2} className="space-between">
             <a href="#service" className="link-href">
               Our service
             </a>
